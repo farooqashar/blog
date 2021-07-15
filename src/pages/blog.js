@@ -17,7 +17,7 @@ const Page = ({ data }) => {
             <h2>{node.frontmatter.title}</h2>
             <p><strong>Posted:</strong> {node.frontmatter.date}</p>
              <Link     activeStyle={{ color: "red" }}
- state={{ content: node.body, title: node.frontmatter.title, date:node.frontmatter.date }} className={navLinkText} to={`/blogs/${node.frontmatter.title}`}>Read Blog Post</Link>
+ state={{ content: node.body, title: node.frontmatter.title, date:node.frontmatter.date }} className={navLinkText} to="/blogs/post">Read Blog Post</Link>
           </article>
           <br/>
           <br/>
