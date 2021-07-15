@@ -41,8 +41,7 @@ export const query = graphql`
         body
       }
     }
-  }
-          `
+  }`
 
 export default Page
 
