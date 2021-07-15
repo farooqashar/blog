@@ -1,10 +1,10 @@
 import * as React from 'react'
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import {
   navLinkText
-   } from '../components/layout.module.css'
+   } from '../../components/layout.module.css'
 
 const Page = ({ data }) => {
 
@@ -17,7 +17,7 @@ const Page = ({ data }) => {
             <h2>{node.frontmatter.title}</h2>
             <p><strong>Posted:</strong> {node.frontmatter.date}</p>
              <Link     activeStyle={{ color: "red" }}
- state={{ content: node.body, title: node.frontmatter.title, date:node.frontmatter.date }} className={navLinkText} to={`/blogs/${node.frontmatter.title}`}>Read Blog Post</Link>
+ state={{ content: node.body, title: node.frontmatter.title, date:node.frontmatter.date }} className={navLinkText} to={`/blogs/${node.id}`}>Read Blog Post</Link>
           </article>
           <br/>
           <br/>

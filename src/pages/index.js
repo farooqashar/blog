@@ -5,11 +5,12 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage = () => {
   return (
-
+    <div>
     <Layout title="Home Page">
-      <h3>Welcome to my blog!</h3>   
+      <h3>Hi! I am Ashar! Welcome to my blog!</h3>   
       <StaticImage src = "../images/ashar.jpg" alt ="picture of Ashar Farooq"/> 
     </Layout>
+    </div>
   )
 }
 export default IndexPage
