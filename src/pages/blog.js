@@ -15,8 +15,12 @@ const Page = ({ data }) => {
           <div>
           <article key={node.id}>
             <h2>{node.frontmatter.title}</h2>
-            <p><strong>Posted:</strong> {node.frontmatter.date}</p>
-             <Link state={{ content: node.body, title: node.frontmatter.title, date:node.frontmatter.date }} className={navLinkText} to="/blogs/post">Read Blog Post</Link>
+            <h3><b>By Ashar Farooq</b></h3>
+            <i><strong>Posted:</strong> {node.frontmatter.date}</i>
+            <MDXRenderer>
+              {node.body}
+            </MDXRenderer>
+             {/* <Link state={{ content: node.body, title: node.frontmatter.title, date:node.frontmatter.date }} className={navLinkText} to="/blogs/post">Read Blog Post</Link> */}
           </article>
           <br/>
           <br/>
