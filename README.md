@@ -4,11 +4,11 @@
 
 ### Hosting
 
-This project is hosted on 3 different platforms: 
+This project is hosted on 2 different platforms: 
 
-1.Gatsby Cloud: https://blogmain69719.gatsbyjs.io/
-2.Vercel: https://blog-coral-theta.vercel.app/
-3.Heroku: 
+1. Gatsby Cloud: https://blogmain69719.gatsbyjs.io/
+
+2. Vercel: https://blog-coral-theta.vercel.app/
 
 
  **Learn more about Gatsby**
